@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# netlify
+.netlify/
+
+# env
+.env
+.env.*
+
+# editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.log

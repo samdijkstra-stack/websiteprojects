@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fulcrum — Grow without spending more</title>
+  <meta name="description" content="Fulcrum is an independent revenue architect. We help founders grow from the assets they already own — positioning, offer, message, pipeline, conversion — and spend only once it works. No cure, no pay." />
+  <meta name="theme-color" content="#0A0A0A" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fulcrum — Grow without spending more" />
+  <meta property="og:description" content="Leverage before spend. Proof before budget. The order is the product." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F7F6F2'/%3E%3Cpath d='M16 7 L24 23 L8 23 Z' fill='%231B4DFF'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- film grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ───────────────────────── NAV ───────────────────────── -->
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a href="#top" class="brand" aria-label="Fulcrum — home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 3 L21 20 L3 20 Z"/></svg>
+        </span>
+        <span class="brand__word">Fulcrum</span>
+        <span class="brand__tag">Go-to-market, inverted.</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#approach" data-link>Approach</a>
+        <a href="#process" data-link>Process</a>
+        <a href="#founder" data-link>Founder</a>
+      </nav>
+
+      <a href="#diagnostic" class="btn btn--pill" data-magnetic>
+        Book a diagnostic <span class="btn__arr" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ───────────────────────── HERO ───────────────────────── -->
+    <section class="hero" id="hero">
+      <div class="hero__sticky">
+        <div class="wrap hero__grid">
+          <div class="hero__copy">
+            <span class="eyebrow" data-reveal>Revenue architecture · Benelux</span>
+            <h1 class="hero__title" data-reveal>
+              Grow without<br />spending <em>more.</em>
+            </h1>
+            <p class="hero__sub" data-reveal>
+              Most growth plans start by adding cost &mdash; headcount, tools,
+              budget, agencies. We find the revenue already sitting in your
+              positioning, offer and pipeline, prove it converts, and scale
+              spend only once it does.
+            </p>
+            <div class="hero__cta" data-reveal>
+              <a href="#diagnostic" class="btn btn--solid" data-magnetic>
+                Book a diagnostic <span class="btn__arr" aria-hidden="true">→</span>
+              </a>
+              <a href="#approach" class="btn btn--ghost" data-link>See the approach</a>
+            </div>
+            <p class="hero__trust" data-reveal>
+              <span class="dot" aria-hidden="true"></span>
+              No cure, no pay · A decade across two unicorns
+            </p>
+          </div>
+
+          <!-- THE SIGNATURE MECHANISM: the tipping balance beam -->
+          <figure class="lever" aria-label="A balance beam. It starts tipped heavily toward spend and, as you scroll, the right foundation tips it toward revenue.">
+            <svg class="lever__svg" viewBox="0 0 560 460" role="img" data-lever>
+              <!-- ground / baseline -->
+              <line class="lever__ground" x1="60" y1="392" x2="500" y2="392" />
+
+              <!-- fulcrum (the pivot) -->
+              <g class="lever__fulcrum">
+                <path d="M280 250 L322 388 L238 388 Z" />
+                <circle class="lever__pivot" cx="280" cy="250" r="7" />
+              </g>
+
+              <!-- the beam + the two loads, rotating around the pivot -->
+              <g data-beam style="transform-origin:280px 250px">
+                <rect class="lever__beam" x="70" y="240" width="420" height="20" rx="10" />
+
+                <!-- SPEND side (heavy, left) -->
+                <g class="lever__hang" data-hang-l style="transform-origin:96px 250px">
+                  <line class="lever__cord" x1="96" y1="250" x2="96" y2="276" />
+                  <rect class="lever__weight lever__weight--heavy" x="58" y="276" width="76" height="76" rx="8" />
+                  <text class="lever__wlabel" x="96" y="320">€</text>
+                </g>
+
+                <!-- REVENUE side (light, right) -->
+                <g class="lever__hang" data-hang-r style="transform-origin:464px 250px">
+                  <line class="lever__cord" x1="464" y1="250" x2="464" y2="290" />
+                  <rect class="lever__weight lever__weight--light" x="440" y="290" width="48" height="48" rx="7" />
+                </g>
+              </g>
+
+              <!-- labels -->
+              <text class="lever__label lever__label--l" data-label-l x="96" y="378">SPEND</text>
+              <text class="lever__label lever__label--mid" x="280" y="420">THE RIGHT FOUNDATION</text>
+              <text class="lever__label lever__label--r" data-label-r x="464" y="378">REVENUE</text>
+            </svg>
+            <figcaption class="lever__cap" data-lever-cap>Tipped toward spend.</figcaption>
+          </figure>
+        </div>
+
+        <div class="hero__scrollhint" aria-hidden="true">
+          <span>Scroll</span>
+          <span class="hero__scrollline"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── PROBLEM ───────────────────────── -->
+    <section class="problem" id="problem">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <span class="eyebrow">01 — The diagnosis</span>
+          <h2 class="section-title">
+            The problem is rarely the budget.<br />
+            <span class="accent">It&rsquo;s the order.</span>
+          </h2>
+          <p class="section-lede">
+            Most teams scale budget on top of a message that doesn&rsquo;t land
+            yet. So every extra euro just buys more of the same low conversion.
+          </p>
+        </header>
+      </div>
+
+      <!-- pinned, contrasting paths -->
+      <div class="orders" data-orders>
+        <div class="orders__sticky">
+          <div class="wrap orders__grid">
+
+            <!-- THE USUAL ORDER -->
+            <article class="order order--wrong" data-order="wrong">
+              <header class="order__head">
+                <span class="eyebrow">The usual order</span>
+                <h3 class="order__title">Cost first.</h3>
+              </header>
+              <ol class="order__steps">
+                <li class="order__step" data-step><span class="order__num">01</span> Hire more reps</li>
+                <li class="order__step" data-step><span class="order__num">02</span> Buy more tools</li>
+                <li class="order__step" data-step><span class="order__num">03</span> Spend more on brand and ads</li>
+                <li class="order__step" data-step><span class="order__num">04</span> Hope it converts</li>
+              </ol>
+              <div class="order__meter order__meter--cost" aria-hidden="true">
+                <span class="order__meter-fill" data-cost></span>
+                <span class="order__meter-label">Cost</span>
+              </div>
+              <p class="order__verdict">
+                Cost goes up first. Proof comes last, if it comes at all.
+              </p>
+            </article>
+
+            <!-- THE ORDER THAT COMPOUNDS -->
+            <article class="order order--right" data-order="right">
+              <header class="order__head">
+                <span class="eyebrow">The order that compounds</span>
+                <h3 class="order__title">Proof first.</h3>
+              </header>
+              <ol class="order__steps">
+                <li class="order__step" data-step><span class="order__num">01</span> Find the revenue you already own</li>
+                <li class="order__step" data-step><span class="order__num">02</span> Sharpen value, offer and message</li>
+                <li class="order__step" data-step><span class="order__num">03</span> Equip the motion with tools and AI</li>
+                <li class="order__step" data-step><span class="order__num">04</span> Scale spend, with known returns</li>
+              </ol>
+              <div class="order__meter order__meter--proof" aria-hidden="true">
+                <span class="order__meter-fill" data-proof></span>
+                <span class="order__meter-label">Proof</span>
+              </div>
+              <p class="order__verdict">
+                Proof comes first. Spend follows it, not the other way around.
+              </p>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── STATS ───────────────────────── -->
+    <section class="stats" id="stats">
+      <div class="wrap">
+        <header class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Leverage</span>
+          <h2 class="section-title">Same pipeline. Same team.<br /><span class="accent">More revenue.</span></h2>
+        </header>
+        <div class="stats__grid">
+          <figure class="stat" data-reveal>
+            <span class="stat__num" data-count="0" data-suffix="">0</span>
+            <figcaption class="stat__cap">new hires required to start finding upside</figcaption>
+          </figure>
+          <figure class="stat" data-reveal>
+            <span class="stat__num"><span data-count="2">0</span>&ndash;<span data-count="3">0</span><em>x</em></span>
+            <figcaption class="stat__cap">the lift a sharper foundation can pull from the same demand</figcaption>
+          </figure>
+          <figure class="stat" data-reveal>
+            <span class="stat__num stat__num--word">weeks</span>
+            <figcaption class="stat__cap">to a first revenue signal, not quarters</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── APPROACH ───────────────────────── -->
+    <section class="approach" id="approach">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <span class="eyebrow">02 — The method</span>
+          <h2 class="section-title">Four moves, in the<br />only order that pays.</h2>
+          <p class="section-lede">
+            A diagnosis, not an invoice. Spend is the last lever we pull.
+          </p>
+        </header>
+
+        <div class="flow" data-reveal>
+          <p class="flow__cap"><span>Leverage first</span> <span class="ln"></span> <b>spend last →</b></p>
+          <ol class="flow__track">
+            <li class="flow__stage">
+              <span class="flow__node"></span>
+              <span class="flow__num">01</span>
+              <h3 class="flow__title">Diagnose</h3>
+              <p class="flow__desc">Audit positioning, offer, message and pipeline. Find where revenue already leaks. No new spend.</p>
+            </li>
+            <li class="flow__stage">
+              <span class="flow__node"></span>
+              <span class="flow__num">02</span>
+              <h3 class="flow__title">Sharpen</h3>
+              <p class="flow__desc">Fix the foundation so value lands and the pipeline you have converts harder. Most of the upside lives here.</p>
+            </li>
+            <li class="flow__stage flow__stage--future">
+              <span class="flow__node"></span>
+              <span class="flow__num">03</span>
+              <h3 class="flow__title">Equip<span class="flow__cond">once the motion works</span></h3>
+              <p class="flow__desc">Bring the stack and AI automations, matched to a motion that already converts.</p>
+            </li>
+            <li class="flow__stage flow__stage--future">
+              <span class="flow__node"></span>
+              <span class="flow__num">04</span>
+              <h3 class="flow__title">Scale<span class="flow__cond">spend, last</span></h3>
+              <p class="flow__desc">Add budget and people on top of something proven, so every euro has a known return.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── INTEGRATIONS / TECHNOLOGY ───────────────────────── -->
+    <section class="integrations" id="stack">
+      <div class="wrap">
+        <header class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Move 03 — Equip</span>
+          <h2 class="section-title">The stack you already have,<br />wired to convert.</h2>
+          <p class="section-lede section-lede--center">
+            We don&rsquo;t sell you tools. We connect the ones you own to a motion
+            that works, then add AI automations to take the manual work off your team.
+          </p>
+        </header>
+
+        <!-- desktop: constellation wired to the Fulcrum hub -->
+        <div class="integrations__diagram" data-reveal>
+          <svg viewBox="0 0 1000 360" role="img" aria-label="Common revenue tools — Salesforce, HubSpot, Slack, Notion, Gmail, Stripe, LinkedIn, Zapier — wired into a central Fulcrum hub.">
+            <!-- connectors (drawn behind tiles) -->
+            <g>
+              <path class="intg-line" d="M160 102 V190" /><circle class="intg-dot" cx="160" cy="190" r="3.5"/>
+              <path class="intg-line" d="M300 102 V190" /><circle class="intg-dot" cx="300" cy="190" r="3.5"/>
+              <path class="intg-line" d="M700 102 V190" /><circle class="intg-dot" cx="700" cy="190" r="3.5"/>
+              <path class="intg-line" d="M840 102 V190" /><circle class="intg-dot" cx="840" cy="190" r="3.5"/>
+              <path class="intg-line" d="M160 258 V190" /><circle class="intg-dot" cx="160" cy="190" r="3.5"/>
+              <path class="intg-line" d="M300 258 V190" /><circle class="intg-dot" cx="300" cy="190" r="3.5"/>
+              <path class="intg-line" d="M700 258 V190" /><circle class="intg-dot" cx="700" cy="190" r="3.5"/>
+              <path class="intg-line" d="M840 258 V190" /><circle class="intg-dot" cx="840" cy="190" r="3.5"/>
+              <line class="intg-line" x1="160" y1="190" x2="440" y2="190" />
+              <line class="intg-line" x1="560" y1="190" x2="840" y2="190" />
+            </g>
+
+            <!-- top row tiles -->
+            <g>
+              <rect class="intg-tile" x="128" y="38" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/salesforce/0A0A0A" x="146" y="56" width="28" height="28"/>
+              <rect class="intg-tile" x="268" y="38" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/hubspot/0A0A0A" x="286" y="56" width="28" height="28"/>
+              <rect class="intg-tile" x="668" y="38" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/slack/0A0A0A" x="686" y="56" width="28" height="28"/>
+              <rect class="intg-tile" x="808" y="38" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/notion/0A0A0A" x="826" y="56" width="28" height="28"/>
+            </g>
+
+            <!-- bottom row tiles -->
+            <g>
+              <rect class="intg-tile" x="128" y="258" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/gmail/0A0A0A" x="146" y="276" width="28" height="28"/>
+              <rect class="intg-tile" x="268" y="258" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/stripe/0A0A0A" x="286" y="276" width="28" height="28"/>
+              <rect class="intg-tile" x="668" y="258" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/linkedin/0A0A0A" x="686" y="276" width="28" height="28"/>
+              <rect class="intg-tile" x="808" y="258" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/zapier/0A0A0A" x="826" y="276" width="28" height="28"/>
+            </g>
+
+            <!-- the Fulcrum hub -->
+            <g>
+              <rect class="intg-hub" x="436" y="146" width="128" height="88" rx="18"/>
+              <path class="intg-hub-tri" d="M500 168 L516 196 L484 196 Z"/>
+              <text class="intg-hub-label" x="500" y="222">Fulcrum</text>
+            </g>
+          </svg>
+        </div>
+
+        <!-- mobile: simple logo grid -->
+        <div class="integrations__grid" aria-hidden="true">
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/salesforce/0A0A0A" alt="Salesforce" width="34" height="34"></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/hubspot/0A0A0A" alt="HubSpot" width="34" height="34"></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/slack/0A0A0A" alt="Slack" width="34" height="34"></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/notion/0A0A0A" alt="Notion" width="34" height="34"></div>
+          <div class="intg-cell intg-cell--hub"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 5 L19 18 L5 18 Z" fill="#1B4DFF"/></svg></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/gmail/0A0A0A" alt="Gmail" width="34" height="34"></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/stripe/0A0A0A" alt="Stripe" width="34" height="34"></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/linkedin/0A0A0A" alt="LinkedIn" width="34" height="34"></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/zapier/0A0A0A" alt="Zapier" width="34" height="34"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── CLARITY CHECK (lead generator) ───────────────────────── -->
+    <section class="clarity" id="diagnostic">
+      <div class="wrap">
+        <header class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Try move 01 — Diagnose</span>
+          <h2 class="section-title">Can a buyer tell what<br />you do, and act on it?</h2>
+          <p class="section-lede section-lede--center">
+            Drop in your site. We read it the way a first-time visitor would and
+            score how clearly it says what you do, who it is for, and how to buy.
+            No spend, no call, just the gaps.
+          </p>
+        </header>
+
+        <div class="clarity__grid" data-reveal>
+          <!-- TOOL -->
+          <div class="tool">
+            <!-- form -->
+            <div id="cc-form" class="tool__form">
+              <div class="field-row">
+                <label for="cc-url">Your website <span class="req">*</span></label>
+                <input class="field" id="cc-url" type="url" placeholder="example.com" autocomplete="off" />
+              </div>
+              <div class="field-row">
+                <label for="cc-offer">In one line, what do you sell? <span class="opt">(optional, sharpens the read)</span></label>
+                <input class="field" id="cc-offer" type="text" placeholder="e.g. onboarding software for fintechs" autocomplete="off" />
+              </div>
+              <button class="btn btn--solid" id="cc-run" data-magnetic>
+                Run the check <span class="btn__arr" aria-hidden="true">→</span>
+              </button>
+              <p class="tool__hint">Takes about 30 seconds. We only read public pages.</p>
+            </div>
+
+            <!-- loading -->
+            <div class="loading" id="cc-loading" aria-live="polite">
+              <div class="lstep" data-i="0"><span class="ldot" aria-hidden="true"></span> Reading your homepage</div>
+              <div class="lstep" data-i="1"><span class="ldot" aria-hidden="true"></span> Working out what you do</div>
+              <div class="lstep" data-i="2"><span class="ldot" aria-hidden="true"></span> Looking for a way to buy</div>
+              <div class="lstep" data-i="3"><span class="ldot" aria-hidden="true"></span> Scoring the clarity</div>
+            </div>
+
+            <!-- result -->
+            <div class="result" id="cc-result">
+              <div class="score-top">
+                <div class="score-ring">
+                  <svg width="96" height="96" viewBox="0 0 96 96" aria-hidden="true">
+                    <circle cx="48" cy="48" r="42" fill="none" stroke="var(--line)" stroke-width="8" />
+                    <circle id="cc-ring" cx="48" cy="48" r="42" fill="none" stroke="var(--clay)" stroke-width="8" stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="264" />
+                  </svg>
+                  <div class="score-num"><span id="cc-scoreNum">0</span><small>/100</small></div>
+                </div>
+                <div class="verdict">
+                  <span class="eyebrow">Clarity score</span>
+                  <h3 id="cc-verdict">&nbsp;</h3>
+                </div>
+              </div>
+
+              <div class="dims locked" id="cc-dims"></div>
+
+              <!-- email gate -->
+              <div class="gate" id="cc-gate">
+                <h3>See the full breakdown</h3>
+                <p>The rest of the scorecard plus the three fixes that would move the most, sent to your inbox.</p>
+                <div class="gate__grow">
+                  <input class="field" id="cc-email" type="email" placeholder="you@company.com" />
+                  <button class="btn btn--solid" id="cc-unlock" data-magnetic>Send it <span class="btn__arr" aria-hidden="true">→</span></button>
+                </div>
+                <label class="consent"><input type="checkbox" id="cc-consent" /> <span>Email me the report and the occasional note on growing without spending more. No spam, unsubscribe anytime. See the <a href="#footer">privacy note</a>.</span></label>
+              </div>
+
+              <div class="unlocked-note" id="cc-unlockedNote">Done. The full report is on its way, and the rest of the scorecard is unlocked above.</div>
+            </div>
+          </div>
+
+          <!-- ASIDE -->
+          <aside class="aside">
+            <div class="report-thumb">
+              <span class="rt-tag">Clarity report</span>
+              <h3>Clarity scorecard.</h3>
+              <p>How clearly your site says what you do, who it is for, and how to buy. Scored, with the fixes that pay first.</p>
+              <div class="rt-row">
+                <div>Score and verdict</div>
+                <div>Findings per area</div>
+                <div>Top three fixes</div>
+              </div>
+            </div>
+            <span class="eyebrow">What you get</span>
+            <ul class="checks">
+              <li><span class="ck" aria-hidden="true">✓</span> A clarity score with a one-line verdict</li>
+              <li><span class="ck" aria-hidden="true">✓</span> What a first-time visitor actually understands</li>
+              <li><span class="ck" aria-hidden="true">✓</span> Whether a ready buyer can act, or stalls</li>
+              <li><span class="ck" aria-hidden="true">✓</span> The three changes that would lift conversion first</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── PRICING (inverted) ───────────────────────── -->
+    <section class="pricing" id="pricing">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <span class="eyebrow eyebrow--invert">03 — The terms</span>
+          <h2 class="section-title section-title--invert">No cure,<br /><span class="accent">no pay.</span></h2>
+          <p class="section-lede section-lede--invert">
+            My incentives are yours. You pay only when a result lands, as a share
+            of the upside we create together. If nothing lands, you owe nothing.
+          </p>
+        </header>
+
+        <ul class="terms">
+          <li class="term" data-reveal>
+            <span class="term__mark term__mark--yes" aria-hidden="true">✓</span>
+            <div>
+              <h3 class="term__title">We cut a cost</h3>
+              <p>You keep the saving, minus an agreed share.</p>
+            </div>
+          </li>
+          <li class="term" data-reveal>
+            <span class="term__mark term__mark--yes" aria-hidden="true">✓</span>
+            <div>
+              <h3 class="term__title">We add revenue, no new cost</h3>
+              <p>You keep the upside, minus an agreed share.</p>
+            </div>
+          </li>
+          <li class="term term--neg" data-reveal>
+            <span class="term__mark term__mark--no" aria-hidden="true">–</span>
+            <div>
+              <h3 class="term__title">Nothing lands</h3>
+              <p>You owe nothing. The risk sits with me.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── FOUNDER ───────────────────────── -->
+    <section class="founder" id="founder">
+      <div class="wrap founder__grid">
+        <div class="founder__intro" data-reveal>
+          <span class="eyebrow">04 — Who runs it</span>
+          <h2 class="section-title">Built at scale.<br />Run without<br /><span class="accent">the bloat.</span></h2>
+          <p class="section-lede">
+            Ten years and two unicorns spent turning message, motion and tooling
+            into revenue. The same playbook the big teams use, run lean, and built
+            by the person doing the work.
+          </p>
+          <p class="founder__sig">Sam Dijkstra <span>Founder, Fulcrum</span></p>
+        </div>
+
+        <div class="founder__side" id="process">
+          <blockquote class="pullquote" data-reveal>
+            <p>&ldquo;You don&rsquo;t need a bigger engine. You need to stop pressing the accelerator before the wheels are pointed the right way.&rdquo;</p>
+          </blockquote>
+          <dl class="founder__stats" data-reveal>
+            <div class="fstat">
+              <dt class="fstat__num">10<em>+</em></dt>
+              <dd>yrs go-to-market</dd>
+            </div>
+            <div class="fstat">
+              <dt class="fstat__num">2</dt>
+              <dd>unicorns scaled</dd>
+            </div>
+            <div class="fstat">
+              <dt class="fstat__num">AI</dt>
+              <dd>automations, built in-house</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── CLOSING CTA ───────────────────────── -->
+    <section class="closing" id="closing">
+      <div class="wrap closing__inner" data-reveal>
+        <span class="eyebrow">Start here</span>
+        <h2 class="closing__title">You only pay<br />if it <em>works.</em></h2>
+        <p class="closing__sub">
+          Start with a short, sharp look at where your revenue is already leaking,
+          and what it would take to grow without spending more.
+        </p>
+        <a href="mailto:hello@fulcrum.example?subject=Book%20a%20diagnostic" class="btn btn--solid btn--lg" data-magnetic>
+          Book a diagnostic <span class="btn__arr" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ───────────────────────── FOOTER ───────────────────────── -->
+  <footer class="footer" id="footer">
+    <div class="wrap footer__grid">
+      <a href="#top" class="brand brand--footer">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 3 L21 20 L3 20 Z"/></svg>
+        </span>
+        <span class="brand__word">Fulcrum</span>
+      </a>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#approach" data-link>Approach</a>
+        <a href="#process" data-link>Process</a>
+        <a href="#founder" data-link>Founder</a>
+        <a href="#diagnostic" data-link>Clarity check</a>
+        <a href="mailto:hello@fulcrum.example">Contact</a>
+      </nav>
+      <p class="footer__note">
+        Fulcrum helps founders grow from the assets they already own before
+        adding cost. Built in the Netherlands, for Benelux teams.
+        <span>© 2026 Fulcrum.</span>
+      </p>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/motion.js"></script>
+  <script defer src="assets/js/clarity.js"></script>
+</body>
+</html>
