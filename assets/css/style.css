@@ -5,24 +5,24 @@
    ===================================================================== */
 
 :root {
-  /* ── Palette ─────────────────────────────────────────────── */
-  --paper:      #F4F1EA;   /* warm off-white / cream */
-  --paper-2:    #EDE8DD;   /* slightly deeper cream for panels */
-  --surface:    #FBF9F3;   /* card surface */
+  /* ── Palette — soft ivory · ink · electric cobalt ────────── */
+  --paper:      #F7F6F2;   /* soft ivory canvas */
+  --paper-2:    #ECEAE2;   /* deeper ivory for panels */
+  --surface:    #FFFFFF;   /* card surface */
   --ink:        #0A0A0A;   /* true near-black */
-  --ink-soft:   #57534A;   /* muted brown-grey for body */
-  --ink-faint:  #8B857A;   /* hints, captions */
-  --line:       #DED8CB;   /* hairlines on paper */
-  --clay:       #C4592E;   /* the single accent — terracotta */
-  --clay-deep:  #A2461F;
-  --clay-soft:  #F0DBCB;   /* terracotta tint panels */
+  --ink-soft:   #4B4D52;   /* cool grey for body */
+  --ink-faint:  #8A8C92;   /* hints, captions */
+  --line:       #E4E2DA;   /* hairlines on ivory */
+  --clay:       #1B4DFF;   /* the single accent — electric cobalt */
+  --clay-deep:  #1239C7;
+  --clay-soft:  #E6EAFF;   /* cobalt tint panels */
 
   /* inverted (dark) section */
-  --dark:       #0C0B0A;
-  --dark-2:     #161412;
-  --dark-line:  #2A2622;
-  --dark-ink:   #EDE8DD;
-  --dark-soft:  #A39C8E;
+  --dark:       #0A0B0D;
+  --dark-2:     #14161B;
+  --dark-line:  #242730;
+  --dark-ink:   #ECEDF0;
+  --dark-soft:  #989BA3;
 
   /* ── Type ────────────────────────────────────────────────── */
   --display: "Bricolage Grotesque", system-ui, sans-serif;
@@ -107,22 +107,9 @@ em { font-style: normal; color: var(--clay); }
 /* ─────────────────────────── Film grain ─────────────────────────── */
 .grain {
   position: fixed; inset: 0; z-index: 1; pointer-events: none;
-  opacity: 0.035; mix-blend-mode: multiply;
+  opacity: 0.022; mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
-
-/* ─────────────────────────── Custom cursor ─────────────────────────── */
-.cursor {
-  position: fixed; top: 0; left: 0; z-index: 300; pointer-events: none;
-  width: 10px; height: 10px; margin: -5px 0 0 -5px; border-radius: 50%;
-  background: var(--clay);
-  transform: translate3d(-100px, -100px, 0) scale(1);
-  transition: transform 0.18s var(--ease-out), opacity 0.3s, width 0.2s, height 0.2s, background 0.2s;
-  mix-blend-mode: normal; opacity: 0;
-}
-.cursor.is-active { opacity: 1; }
-.cursor.is-hover { width: 42px; height: 42px; margin: -21px 0 0 -21px; background: transparent; border: 1.5px solid var(--clay); }
-@media (hover: none), (pointer: coarse) { .cursor { display: none; } }
 
 /* ─────────────────────────── Buttons ─────────────────────────── */
 .btn {
@@ -197,16 +184,16 @@ em { font-style: normal; color: var(--clay); }
 }
 .section-lede--center { margin-inline: auto; }
 
-/* generous section rhythm */
-.problem, .stats, .approach, .clarity, .pricing, .founder, .closing {
-  padding-block: clamp(80px, 12vh, 160px);
+/* tighter, deliberate section rhythm */
+.problem, .stats, .approach, .integrations, .clarity, .pricing, .founder, .closing {
+  padding-block: clamp(56px, 8vh, 104px);
   position: relative; z-index: 2;
 }
 
 /* =====================================================================
    HERO + the tipping balance beam
    ===================================================================== */
-.hero { position: relative; z-index: 2; min-height: 184vh; }
+.hero { position: relative; z-index: 2; min-height: 142vh; }
 .hero__sticky {
   position: sticky; top: 0; min-height: 100vh;
   display: flex; flex-direction: column; justify-content: center;
@@ -264,10 +251,7 @@ em { font-style: normal; color: var(--clay); }
    ===================================================================== */
 .problem .section-head { margin-bottom: clamp(40px, 7vh, 90px); }
 .orders { position: relative; }
-.orders__sticky {
-  min-height: 100vh; display: flex; align-items: center;
-  padding-block: 40px;
-}
+.orders__sticky { display: block; }
 .orders__grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: clamp(20px, 4vw, 48px);
   align-items: stretch;
@@ -362,6 +346,59 @@ em { font-style: normal; color: var(--clay); }
   border: 1px solid var(--line); border-radius: 100px; padding: 5px 11px; font-weight: 400;
 }
 .move__body p { margin-top: 16px; color: var(--ink-soft); max-width: 60ch; font-size: clamp(16px, 1.4vw, 19px); }
+
+/* approach as a connected flow (the order, made spatial) */
+.flow__cap {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 26px;
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ink-faint);
+}
+.flow__cap b { color: var(--clay); font-weight: 700; }
+.flow__cap .ln { flex: 1; height: 1px; background: var(--line); }
+.flow { position: relative; padding-top: 8px; }
+.flow__rail { position: absolute; left: 0; right: 0; top: 6px; height: 2px; background: var(--line); }
+.flow__rail i { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--clay); transition: width 1.2s var(--ease-weight); }
+.is-in .flow__rail i, .flow.is-in .flow__rail i { width: 88%; }
+.flow__track { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(18px, 2.5vw, 44px); }
+.flow__stage { position: relative; padding-top: 30px; }
+.flow__node { position: absolute; top: 0; left: 0; width: 14px; height: 14px; border-radius: 50%; background: var(--clay); box-shadow: 0 0 0 5px var(--paper); }
+.flow__stage--future .flow__node { background: var(--paper); border: 2px solid var(--line); box-shadow: 0 0 0 5px var(--paper); }
+.flow__num { font-family: var(--mono); font-size: 13px; color: var(--clay); }
+.flow__stage--future .flow__num { color: var(--ink-faint); }
+.flow__title { font-size: clamp(21px, 2.1vw, 30px); margin-top: 8px; }
+.flow__cond { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-faint); font-weight: 400; margin-top: 6px; }
+.flow__desc { margin-top: 12px; color: var(--ink-soft); font-size: clamp(14px, 1.2vw, 16px); max-width: 26ch; }
+
+/* =====================================================================
+   INTEGRATIONS / TECHNOLOGY — the stack we equip the motion with
+   ===================================================================== */
+.integrations { background: var(--paper-2); border-block: 1px solid var(--line); }
+.integrations .section-head { margin-inline: auto; }
+.integrations__diagram { width: 100%; max-width: 1000px; margin: clamp(32px, 5vh, 60px) auto 0; }
+.integrations__diagram svg { width: 100%; height: auto; overflow: visible; }
+.intg-tile { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+.intg-line { stroke: var(--clay); stroke-width: 1.5; fill: none; opacity: 0.5; stroke-dasharray: 220; stroke-dashoffset: 220; transition: stroke-dashoffset 1s var(--ease-out); }
+.is-in .intg-line { stroke-dashoffset: 0; }
+.intg-dot { fill: var(--clay); }
+.intg-hub { fill: var(--ink); }
+.intg-hub-tri { fill: var(--clay); }
+.intg-hub-label { fill: var(--paper); font-family: var(--display); font-weight: 700; font-size: 17px; text-anchor: middle; letter-spacing: -0.02em; }
+.intg-logo { filter: none; }
+.integrations__grid { display: none; }
+
+@media (max-width: 780px) {
+  .integrations__diagram { display: none; }
+  .integrations__grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+    margin-top: 32px;
+  }
+  .intg-cell {
+    aspect-ratio: 1; display: grid; place-items: center;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+  }
+  .intg-cell img { width: 34px; height: 34px; opacity: 0.9; }
+  .intg-cell--hub { background: var(--ink); }
+}
 
 /* =====================================================================
    CLARITY CHECK (lead generator), Fulcrum-themed
@@ -578,6 +615,14 @@ label .opt { color: var(--ink-faint); font-weight: 400; }
   .stats__grid { grid-template-columns: 1fr; gap: 56px; }
   .move { grid-template-columns: 1fr; gap: 6px; }
   .move__num { padding-top: 0; }
+
+  /* flow goes vertical with a left connector */
+  .flow__rail { display: none; }
+  .flow__track { grid-template-columns: 1fr; gap: 0; }
+  .flow__stage { padding: 0 0 28px 28px; border-left: 2px solid var(--line); }
+  .flow__stage:last-child { border-left-color: transparent; padding-bottom: 0; }
+  .flow__node { top: 4px; left: -8px; }
+  .flow__desc { max-width: none; }
   .founder__stats { grid-template-columns: 1fr; gap: 24px; }
   .footer__grid { grid-template-columns: 1fr; }
 }

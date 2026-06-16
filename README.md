@@ -93,10 +93,22 @@ the consent text shown. You are the data controller.
 
 ## Design notes
 
-- **Palette:** warm cream `#F4F1EA`, near-black `#0A0A0A`, a single terracotta
-  accent `#C4592E`, with an inverted near-black block for pricing/founder.
+- **Palette:** soft ivory `#F7F6F2`, near-black ink `#0A0A0A`, a single
+  electric-cobalt accent `#1B4DFF`, with an inverted near-black block for the
+  integrations diagram fallback, pricing and founder.
 - **Type:** Bricolage Grotesque (display), Hanken Grotesk (body), Space Mono
   (labels, numerals, the 01–04 sequence).
+- **Motion is restrained by design:** a gentle scroll-tip on the hero beam,
+  calm in-view reveals, count-ups, and a sequential reveal of the two order
+  paths. No GSAP, no custom cursor, no magnetic buttons — driven by a small
+  native-scroll handler and IntersectionObserver only.
+- **Approach diagram** renders the four moves as a connected flow (leverage
+  first → spend last). The **integrations section** wires common revenue tools
+  into a central Fulcrum hub.
+- **Tool logos** load from [Simple Icons](https://simpleicons.org) via
+  `cdn.simpleicons.org` at runtime (monochrome, on-palette). They degrade
+  gracefully if unreachable. To remove the external dependency entirely,
+  download the SVGs into `assets/logos/` and point the `href`/`src` at them.
 - The clarity check shares the site's palette and type for one cohesive piece.
 
 © 2026 Fulcrum.

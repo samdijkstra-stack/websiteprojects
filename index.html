@@ -17,14 +17,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F4F1EA'/%3E%3Cpath d='M16 7 L24 23 L8 23 Z' fill='%23C4592E'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F7F6F2'/%3E%3Cpath d='M16 7 L24 23 L8 23 Z' fill='%231B4DFF'/%3E%3C/svg%3E" />
 </head>
 <body>
   <!-- film grain overlay -->
   <div class="grain" aria-hidden="true"></div>
-
-  <!-- custom pivot cursor -->
-  <div class="cursor" data-cursor aria-hidden="true"></div>
 
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -64,9 +61,10 @@
               Grow without<br />spending <em>more.</em>
             </h1>
             <p class="hero__sub" data-reveal>
-              Most companies chase growth by adding cost. More headcount, more
-              tools, more budget, more agencies. We help you get more from the
-              assets you already own, then spend only once it works.
+              Most growth plans start by adding cost &mdash; headcount, tools,
+              budget, agencies. We find the revenue already sitting in your
+              positioning, offer and pipeline, prove it converts, and scale
+              spend only once it does.
             </p>
             <div class="hero__cta" data-reveal>
               <a href="#diagnostic" class="btn btn--solid" data-magnetic>
@@ -136,10 +134,8 @@
             <span class="accent">It&rsquo;s the order.</span>
           </h2>
           <p class="section-lede">
-            Spending more is good for incremental results and great for burning
-            cash. Most teams scale budget on top of a message that doesn&rsquo;t
-            land yet, so every extra euro buys a little more of the same low
-            conversion.
+            Most teams scale budget on top of a message that doesn&rsquo;t land
+            yet. So every extra euro just buys more of the same low conversion.
           </p>
         </header>
       </div>
@@ -227,41 +223,116 @@
           <span class="eyebrow">02 — The method</span>
           <h2 class="section-title">Four moves, in the<br />only order that pays.</h2>
           <p class="section-lede">
-            We start with a diagnosis, not an invoice. Spend is the last lever we
-            pull, never the first.
+            A diagnosis, not an invoice. Spend is the last lever we pull.
           </p>
         </header>
 
-        <ol class="moves">
-          <li class="move" data-reveal>
-            <span class="move__num">01</span>
-            <div class="move__body">
-              <h3 class="move__title">Diagnose</h3>
-              <p>We audit positioning, offer, message, pipeline and conversion to find where revenue is already leaking. No new spend, no new headcount. Just the gaps.</p>
-            </div>
-          </li>
-          <li class="move" data-reveal>
-            <span class="move__num">02</span>
-            <div class="move__body">
-              <h3 class="move__title">Sharpen</h3>
-              <p>We fix the foundation so your value lands and your existing pipeline converts harder. This is where most of the upside lives, before a cent of new budget.</p>
-            </div>
-          </li>
-          <li class="move" data-reveal>
-            <span class="move__num">03</span>
-            <div class="move__body">
-              <h3 class="move__title">Equip <span class="move__cond">only once the motion works</span></h3>
-              <p>Now we bring the stack. The right tools, matched to a motion that already converts, plus AI automations built to take the manual work off your team.</p>
-            </div>
-          </li>
-          <li class="move move--last" data-reveal>
-            <span class="move__num">04</span>
-            <div class="move__body">
-              <h3 class="move__title">Scale <span class="move__cond">spend, last</span></h3>
-              <p>Add budget and people on top of something proven, so every euro has a known return instead of a hope attached to it.</p>
-            </div>
-          </li>
-        </ol>
+        <div class="flow" data-reveal>
+          <p class="flow__cap"><span>Leverage first</span> <span class="ln"></span> <b>spend last →</b></p>
+          <ol class="flow__track">
+            <li class="flow__stage">
+              <span class="flow__node"></span>
+              <span class="flow__num">01</span>
+              <h3 class="flow__title">Diagnose</h3>
+              <p class="flow__desc">Audit positioning, offer, message and pipeline. Find where revenue already leaks. No new spend.</p>
+            </li>
+            <li class="flow__stage">
+              <span class="flow__node"></span>
+              <span class="flow__num">02</span>
+              <h3 class="flow__title">Sharpen</h3>
+              <p class="flow__desc">Fix the foundation so value lands and the pipeline you have converts harder. Most of the upside lives here.</p>
+            </li>
+            <li class="flow__stage flow__stage--future">
+              <span class="flow__node"></span>
+              <span class="flow__num">03</span>
+              <h3 class="flow__title">Equip<span class="flow__cond">once the motion works</span></h3>
+              <p class="flow__desc">Bring the stack and AI automations, matched to a motion that already converts.</p>
+            </li>
+            <li class="flow__stage flow__stage--future">
+              <span class="flow__node"></span>
+              <span class="flow__num">04</span>
+              <h3 class="flow__title">Scale<span class="flow__cond">spend, last</span></h3>
+              <p class="flow__desc">Add budget and people on top of something proven, so every euro has a known return.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── INTEGRATIONS / TECHNOLOGY ───────────────────────── -->
+    <section class="integrations" id="stack">
+      <div class="wrap">
+        <header class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Move 03 — Equip</span>
+          <h2 class="section-title">The stack you already have,<br />wired to convert.</h2>
+          <p class="section-lede section-lede--center">
+            We don&rsquo;t sell you tools. We connect the ones you own to a motion
+            that works, then add AI automations to take the manual work off your team.
+          </p>
+        </header>
+
+        <!-- desktop: constellation wired to the Fulcrum hub -->
+        <div class="integrations__diagram" data-reveal>
+          <svg viewBox="0 0 1000 360" role="img" aria-label="Common revenue tools — Salesforce, HubSpot, Slack, Notion, Gmail, Stripe, LinkedIn, Zapier — wired into a central Fulcrum hub.">
+            <!-- connectors (drawn behind tiles) -->
+            <g>
+              <path class="intg-line" d="M160 102 V190" /><circle class="intg-dot" cx="160" cy="190" r="3.5"/>
+              <path class="intg-line" d="M300 102 V190" /><circle class="intg-dot" cx="300" cy="190" r="3.5"/>
+              <path class="intg-line" d="M700 102 V190" /><circle class="intg-dot" cx="700" cy="190" r="3.5"/>
+              <path class="intg-line" d="M840 102 V190" /><circle class="intg-dot" cx="840" cy="190" r="3.5"/>
+              <path class="intg-line" d="M160 258 V190" /><circle class="intg-dot" cx="160" cy="190" r="3.5"/>
+              <path class="intg-line" d="M300 258 V190" /><circle class="intg-dot" cx="300" cy="190" r="3.5"/>
+              <path class="intg-line" d="M700 258 V190" /><circle class="intg-dot" cx="700" cy="190" r="3.5"/>
+              <path class="intg-line" d="M840 258 V190" /><circle class="intg-dot" cx="840" cy="190" r="3.5"/>
+              <line class="intg-line" x1="160" y1="190" x2="440" y2="190" />
+              <line class="intg-line" x1="560" y1="190" x2="840" y2="190" />
+            </g>
+
+            <!-- top row tiles -->
+            <g>
+              <rect class="intg-tile" x="128" y="38" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/salesforce/0A0A0A" x="146" y="56" width="28" height="28"/>
+              <rect class="intg-tile" x="268" y="38" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/hubspot/0A0A0A" x="286" y="56" width="28" height="28"/>
+              <rect class="intg-tile" x="668" y="38" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/slack/0A0A0A" x="686" y="56" width="28" height="28"/>
+              <rect class="intg-tile" x="808" y="38" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/notion/0A0A0A" x="826" y="56" width="28" height="28"/>
+            </g>
+
+            <!-- bottom row tiles -->
+            <g>
+              <rect class="intg-tile" x="128" y="258" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/gmail/0A0A0A" x="146" y="276" width="28" height="28"/>
+              <rect class="intg-tile" x="268" y="258" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/stripe/0A0A0A" x="286" y="276" width="28" height="28"/>
+              <rect class="intg-tile" x="668" y="258" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/linkedin/0A0A0A" x="686" y="276" width="28" height="28"/>
+              <rect class="intg-tile" x="808" y="258" width="64" height="64" rx="14"/>
+              <image class="intg-logo" href="https://cdn.simpleicons.org/zapier/0A0A0A" x="826" y="276" width="28" height="28"/>
+            </g>
+
+            <!-- the Fulcrum hub -->
+            <g>
+              <rect class="intg-hub" x="436" y="146" width="128" height="88" rx="18"/>
+              <path class="intg-hub-tri" d="M500 168 L516 196 L484 196 Z"/>
+              <text class="intg-hub-label" x="500" y="222">Fulcrum</text>
+            </g>
+          </svg>
+        </div>
+
+        <!-- mobile: simple logo grid -->
+        <div class="integrations__grid" aria-hidden="true">
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/salesforce/0A0A0A" alt="Salesforce" width="34" height="34"></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/hubspot/0A0A0A" alt="HubSpot" width="34" height="34"></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/slack/0A0A0A" alt="Slack" width="34" height="34"></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/notion/0A0A0A" alt="Notion" width="34" height="34"></div>
+          <div class="intg-cell intg-cell--hub"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 5 L19 18 L5 18 Z" fill="#1B4DFF"/></svg></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/gmail/0A0A0A" alt="Gmail" width="34" height="34"></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/stripe/0A0A0A" alt="Stripe" width="34" height="34"></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/linkedin/0A0A0A" alt="LinkedIn" width="34" height="34"></div>
+          <div class="intg-cell"><img loading="lazy" src="https://cdn.simpleicons.org/zapier/0A0A0A" alt="Zapier" width="34" height="34"></div>
+        </div>
       </div>
     </section>
 
@@ -476,9 +547,6 @@
     </div>
   </footer>
 
-  <!-- GSAP (scroll choreography) — deferred, non-blocking -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script defer src="assets/js/motion.js"></script>
   <script defer src="assets/js/clarity.js"></script>
 </body>
